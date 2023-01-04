@@ -1,0 +1,33 @@
+.roadmap-advices {
+  font-weight: var(--font-weight--medium);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.timeline__number--full::after {
+  content: '';
+  height: 140%;
+  position: absolute;
+  width: 0.5rem;
+  top: 4%;
+  bottom: 0;
+  right: 26.7%;
+  transform: translatey(-2.2%);
+  z-index: -1;
+}
+.timeline__number--full-last::after {
+  content: '';
+  height: 47%;
+  position: absolute;
+  width: 0.5rem;
+  top: 5%;
+  right: 26.7%;
+  transform: translatey(-2.2%);
+  z-index: -1;
+}
+
+.course-summary--full {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}

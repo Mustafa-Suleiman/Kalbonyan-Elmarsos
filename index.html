@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>كالبنيان المرصوص - تعلم البرمجة من الصفر</title>
+    <meta
+      name="description"
+      content="كالبنيان المرصوص هي فكرة لمجموعة شباب أرادوا أن يدلوا الناس على الطريق الصحيح للنجاح في مجال الـ Software Engineering فقرروا أن يقوموا بفعل ذلك عن طريق مسابقات بمناهج من أفضل المنصات التعليمية وبجوائز مبذولة من مهندسين نجحوا قبلهم في هذا المجال. البنيان ليست هادفة للربح وإنما تهدف لأن تربي جيلًا يتعلم بحق فيرقى ويرتقي."
+    />
+    <meta
+      name="keywords"
+      content="تعلم البرمجة, full stack, mern full stack, front end, Back end, تعلم البرمجة مجانا,كورسات برمجة,roadmap"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/imgs/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/imgs/favicon/safari-pinned-tab.svg" color=" #2d358c" />
+    <meta name="msapplication-TileColor" content=" #2d358c" />
+    <meta name="theme-color" content="#2d358c" />
+    <meta property="og:image" content="/imgs/site-image.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script type="module" src="/js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="glassmorphism">
+      <!-------- HEADER START --------->
+      <header class="header-section glassmorphism">
+        <div class="header-wrapper container flex f--align-items-c">
+          <iconify-icon
+            inline
+            icon="eva:menu-outline"
+            class="side-menu-icon menu-toggle"
+          ></iconify-icon>
+          <iconify-icon
+            inline
+            icon="bi:x-lg"
+            class="side-menu-iconClose menu-toggle"
+          ></iconify-icon>
+          <a href="https://kbelmarsos.org/" class="link">
+            <img src="/imgs/kbelmarsos-logo.webp" alt="" class="site-logo"
+          /></a>
+
+          <nav class="nav-links flex f--align-items-c">
+            <li><a href="http://kbelmarsos.org/" class="nav-links__link link">الرئيسية</a></li>
+            <li>
+              <a href="/full-stack-roadmap.html" class="nav-links__link link">مسار البنيان</a>
+            </li>
+            <!-- <li><a href="#" class="nav-links__link link">الأسئلة الشائعة</a></li> -->
+            <li class="drobdown-toggle p-relative">
+              <a href="#" class="nav-links__link link">
+                سهم العلم
+                <iconify-icon
+                  inline
+                  icon="fa-solid:greater-than"
+                  style="color: #322143; font-size: 1rem; transform: rotate(90deg)"
+                ></iconify-icon>
+              </a>
+
+              <ul class="submenu list-s-none">
+                <li class="flex f--align-items-c">
+                  <iconify-icon inline icon="fluent-emoji:four-leaf-clover"></iconify-icon>
+                  <a
+                    href="https://almdrasa.com/donations/students/"
+                    target="_blank"
+                    class="submenu__link link"
+                  >
+                    تبرع
+                  </a>
+                </li>
+                <li class="flex f--align-items-c">
+                  <iconify-icon inline icon="fluent-emoji:wrapped-gift"></iconify-icon>
+
+                  <a
+                    href="https://almdrasa.com/financial-aid/"
+                    target="_blank"
+                    class="submenu__link link submenu__link--support"
+                    >دعم مالي لغير القادرين</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- <li><a href="#" class="nav-links__link link">قائمة الفائزين</a></li> -->
+            <!-- <li>
+              <a href="" class="nav-links__link">مصادر</a>
+              <div class="drobdown--wrapper">
+                <ul class="drobdown__content">
+                  <li>
+                    <a href="" class="nav-links__link">أدوات</a>
+                  </li>
+                  <li><a href="" class="nav-links__link">المدونة</a></li>
+                </ul>
+              </div>
+            </li> -->
+          </nav>
+          <!-- <button class="login-btn">
+            <img src="/imgs/header/login-icon.svg" alt="" class="login-btn__icon" />
+          </button> -->
+        </div>
+      </header>
+      <!-------- HEADER END --------->
+      <div class="mesh-gradient container p-relative">
+        <img src="/imgs/mesh/mesh-1.jfif" alt="" class="mesh-gradient__img" />
+        <img src="/imgs/mesh/mesh-2.jfif" alt="" class="mesh-gradient__img--2" />
+
+        <!-------- HERO SECTION START --------->
+        <main class="p-relative">
+          <div class="hero container grid grid--2-columns section-padding section-m-bottom">
+            <div class="hero__text">
+              <p class="sub-heading">مسابقة كالبنيان المرصوص</p>
+              <h1 class="hero__title primary-heading">مسار محدد بعناية لتخريج أفضل المبرمجين</h1>
+              <p class="hero__desc">
+                خطوة بخطوة بدءًا من أساسيات علوم الحاسب حتى الوصول لتصبح
+                <span>Mern Stack Developer.</span>.
+              </p>
+            </div>
+            <img src="/imgs/hero/hero.webp" alt="" class="hero__img" />
+          </div>
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </main>
+        <!-------- HERO SECTION END --------->
+
+        <!-------- INTRO SECTION START --------->
+        <section class="intro-section container section-padding section-m-bottom p-relative">
+          <h2 class="secondary-heading intro__title tex-align--c">التعريف بالمسابقة</h2>
+          <div class="intro-inner-wrapper grid grid--2-columns wrapper-padding-top">
+            <div class="intro__video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/wT14uC055KE?clip=UgkxdbaV_BaLgNAbvcvsGunC7X6z4qdgE3c_&amp;clipt=EIDaARitvQI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="intro__desc flex f--column">
+              <p>
+                كالبنيان المرصوص هي فكرة لمجموعة شباب أرادوا أن يدلوا الناس على الطريق الصحيح للنجاح
+                في مجال الـ Software Engineering فقرروا أن يقوموا بفعل ذلك عن طريق مسابقات بمناهج من
+                أفضل المنصات التعليمية وبجوائز مبذولة من مهندسين نجحوا قبلهم في هذا المجال. البنيان
+                ليست هادفة للربح وإنما تهدف لأن تربي جيلًا يتعلم بحق فيرقى ويرتقي.
+              </p>
+              <p>
+                ولأنه يجب التخطيط لكل هدف ولكل هدف يجب أن يكون له خطوات ونتائج فقد جلعنا من الجوائز
+                ما يحفزك على الإنتهاء من هذا المنهج خلال 6 أشهر وهي فترة المسابقة. فإذا كنت من هؤلاء
+                الذين شمروا ساعد الجد للأخذ بأسباب النجاح فالتحق معنا بركب المجتهدين واعلم إنما
+                بالله ثم ببعضنا البعض.
+              </p>
+
+              <p>كما قال رسول الله ﷺ (المؤمن للمؤمن كالبنيان يَشد بعضه بعضًا).</p>
+            </div>
+            <div>
+              <h3 class="tertiary-heading conditions__title tex-align--c">
+                شروط الالتحاق بالمسابقة
+              </h3>
+              <img src="/imgs/intro/conditions.png" alt="" class="conditions__img" />
+            </div>
+
+            <div
+              class="intro__conditions flex f--column f--align-items-c f--justify-content-c section-padding glassmorphism--bg"
+            >
+              <ul class="conditions__list flex f--column">
+                <li>
+                  <span class="list__number">1</span>
+                  المسابقة للمبتدئين، فإذا كنت ممن لهم باع في عالم البرمجة فهذه المسابقة ليست لك.
+                </li>
+                <li>
+                  <span class="list__number">2</span>
+                  المسابقة لا تشترط سن، جنس أو جنسية معينة، فالمسابقة لجميع الأعمار طالما الهدف هو
+                  تعلم البرمجة، سواء من أرادوا تغيير مسارهم الوظيفي للبرمجة أو طلاب أو آخرين ضلوا
+                  طريق التخطيط ويريدون منهج يبدئ بهم من المجهول حتى يضعهم على الطريق.
+                </li>
+                <li>
+                  <span class="list__number">3</span>
+                  يجب مشاهدة جميع المواد الخاصة بالمسابقة من البداية إلى النهاية عند بدء المسابقة،
+                  وسيتعين عليك مشاهدة المادة العلمية من البداية حتى لو كنت شاهدتها من قبل، حتى
+                  يتساوى الجميع عند البدء.
+                </li>
+                <li>
+                  <span class="list__number">4</span>
+                  أي متقدم صاحب خبرة يدخل المسابقة للجوائز المادية سيتم رفضه فالغرض من المسابقة، هو
+                  الأخذ بأيدي الشباب مع تحفيزهم على ذلك بمقابل مادي بسيط، وليس الغرض الأساسي من
+                  المسابقة هي المادة، فإذا أنعم الله عليك بالخبرة والعمل فلا تزاحم إخوانك الذين
+                  يريدون أن يلحقوا بك.
+                </li>
+                <li>
+                  <span class="list__number">5</span>
+                  يجب الإلتزام بالمنهج كاملاً والوقت المحدد للمسابقة إذا أردت الفوز بجوائز مادية.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
+        <!-------- INTRO SECTION END --------->
+
+        <!-------- REWARDS SECTION START --------->
+        <section class="rewards-section p-relative">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h2 class="rewards-title secondary-heading tex-align--c">جوائز مادية للفائزين</h2>
+          <div class="container rewards-wrapper grid section-padding section-m-bottom">
+            <!-- reward card start -->
+            <div class="flex f--justify-content-c top-places">
+              <div class="rewards__card glassmorphism--bg">
+                <img src="/imgs/trophy/first-place.webp" alt="" class="rewards__card__img" />
+                <div class="rewards__card__text">
+                  <p class="rewards__card__title flex f--align-items-c">
+                    <iconify-icon icon="fluent-emoji:1st-place-medal"></iconify-icon>
+                    المركز الأول
+                  </p>
+
+                  <p class="rewards__card__desc flex f--align-items-c">
+                    <iconify-icon icon="emojione:money-bag"></iconify-icon>
+                    10الآف جنيه
+                  </p>
+                </div>
+              </div>
+              <!-- reward card end -->
+
+              <div class="rewards__card glassmorphism--bg">
+                <img src="/imgs/trophy/rest.webp" alt="" class="rewards__card__img" />
+                <div class="rewards__card__text">
+                  <p class="rewards__card__title flex f--align-items-c">
+                    <iconify-icon icon="fluent-emoji:2nd-place-medal"></iconify-icon>
+                    المركز الثاني
+                  </p>
+
+                  <p class="rewards__card__desc flex f--align-items-c">
+                    <iconify-icon icon="emojione:money-bag" class="emoji"></iconify-icon>
+                    8 الآف جنيه
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="rewards__card glassmorphism--bg">
+              <img src="/imgs/trophy/rest.webp" alt="" class="rewards__card__img" />
+              <div class="rewards__card__text">
+                <p class="rewards__card__title flex f--align-items-c">
+                  <iconify-icon icon="fluent-emoji:3rd-place-medal"></iconify-icon>
+                  المركز الثالث
+                </p>
+
+                <p class="rewards__card__desc flex f--align-items-c">
+                  <iconify-icon icon="emojione:money-bag" class="emoji"></iconify-icon>
+                  6 الآف جنيه
+                </p>
+              </div>
+            </div>
+
+            <div class="rewards__card glassmorphism--bg">
+              <img src="/imgs/trophy/rest.webp" alt="" class="rewards__card__img" />
+              <div class="rewards__card__text">
+                <p class="rewards__card__title flex f--align-items-c">
+                  <iconify-icon icon="fluent-emoji:sports-medal"></iconify-icon>
+                  المركز الرابع
+                </p>
+
+                <p class="rewards__card__desc flex f--align-items-c">
+                  <iconify-icon icon="emojione:money-bag" class="emoji"></iconify-icon>
+                  4 الآف جنيه
+                </p>
+              </div>
+            </div>
+
+            <div class="rewards__card glassmorphism--bg">
+              <img src="/imgs/trophy/rest.webp" alt="" class="rewards__card__img" />
+              <div class="rewards__card__text">
+                <p class="rewards__card__title flex f--align-items-c">
+                  <iconify-icon icon="fluent-emoji:sports-medal"></iconify-icon>
+                  المركز الخامس
+                </p>
+
+                <p class="rewards__card__desc flex f--align-items-c">
+                  <iconify-icon icon="emojione:money-bag" class="emoji"></iconify-icon>
+                  2 الآف جنيه
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-------- REWARDS SECTION END --------->
+
+        <!-------- ROAD MAP SECTION START --------->
+        <section class="roadmap-section container p-relative section-m-bottom section-padding">
+          <h2 class="roadmap-section__title secondary-heading tex-align--c">
+            منهج كالبنيان المرصوص
+          </h2>
+          <div class="roadmap-section__innerWrapper grid wrapper-padding-top">
+            <div class="timeline container grid wrapper-padding-top">
+              <h3 class="roadmap-divider tertiary-heading tex-align--c">أساسيات البرمجة</h3>
+
+              <!-- timeline card number-->
+              <div class="timeline__number p-relative timeline__number--half"><span>1</span></div>
+              <!-- timeline card -->
+              <div class="timeline__card section-padding glassmorphism--bg p-relative">
+                <div class="timeline__label">
+                  <img
+                    src="/imgs/roadmap/linkedin-learning.svg"
+                    alt=""
+                    class="linkedin-learningIcon"
+                  />
+                </div>
+                <a
+                  href="https://www.linkedin.com/learning/programming-foundations-fundamentals-3?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56db2b643dd5596be4e4989b"
+                  target="_blank"
+                  class="timeline__title link"
+                  >The fundamentals of programming
+                </a>
+
+                <div class="timeline__courseInfo flex f--align-items-c">
+                  <iconify-icon inline icon="lucide:clock-4"></iconify-icon>
+                  <span> ساعتان و 10 دقائق</span>
+                </div>
+                <div class="timeline__desc">
+                  في هذه الدورة، تستخدم المدربة Annyce Davis لغة Python لاستكشاف المفاهيم الأساسية
+                  وهيكل لغات البرمجة وتساعدك على فهم ما يجري في الخلفية عند كتابة كود برمجي.
+                </div>
+              </div>
+              <!-- timeline card end-->
+
+              <!-- timeline card number-->
+              <div class="timeline__number p-relative"><span>2</span></div>
+              <!-- timeline card START -->
+              <div class="timeline__card section-padding glassmorphism--bg p-relative">
+                <div class="timeline__label">
+                  <img
+                    src="/imgs/roadmap/linkedin-learning.svg"
+                    alt=""
+                    class="linkedin-learningIcon"
+                  />
+                </div>
+                <a
+                  href="https://www.linkedin.com/learning/programming-foundations-beyond-the-fundamentals?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56db2b643dd5596be4e4989b"
+                  target="_blank"
+                  class="timeline__title link"
+                  >Beyond the Fundamentals
+                </a>
+
+                <div class="timeline__courseInfo flex f--align-items-c">
+                  <iconify-icon inline icon="lucide:clock-4"></iconify-icon>
+                  <span> ساعتان و 4 دقائق</span>
+                </div>
+                <div class="timeline__desc">
+                  في هذا الجزء من سلسلة أسس البرمجة، يتجاوز المدرب ساشا فودنيك الأساسيات، مستخدمً
+                  بايثون لمعالجة مجموعة متنوعة من المفاهيم والمهارات المتوسطة والمتقدمة.
+                </div>
+              </div>
+              <!-- timeline card end-->
+
+              <!-- timeline card number-->
+              <div class="timeline__number p-relative"><span>3</span></div>
+              <!-- timeline card START -->
+              <div class="timeline__card section-padding glassmorphism--bg p-relative">
+                <div class="timeline__label">
+                  <img
+                    src="/imgs/roadmap/linkedin-learning.svg"
+                    alt=""
+                    class="linkedin-learningIcon"
+                  />
+                </div>
+                <a
+                  href="https://www.linkedin.com/learning/programming-foundations-object-oriented-design-3"
+                  target="_blank"
+                  class="timeline__title link"
+                  >Object-Oriented Design
+                </a>
+
+                <div class="timeline__courseInfo flex f--align-items-c">
+                  <iconify-icon inline icon="lucide:clock-4"></iconify-icon>
+                  <span> ساعتان و 40 دقائق</span>
+                </div>
+                <div class="timeline__desc">
+                  يساعد التصميم الموجه للكائنات المطورين على تخطيط التطبيقات قبل كتابة سطر واحد من
+                  التعليمات البرمجية، وتقسيم الأفكار إلى مكونات يمكن إعادة استخدامها وتعديلها.
+                </div>
+              </div>
+              <!-- timeline card end-->
+
+              <!-- timeline card number-->
+              <div class="timeline__number p-relative"><span>4</span></div>
+              <!-- timeline card START -->
+              <div class="timeline__card section-padding glassmorphism--bg p-relative">
+                <div class="timeline__label">
+                  <img
+                    src="/imgs/roadmap/linkedin-learning.svg"
+                    alt=""
+                    class="linkedin-learningIcon"
+                  />
+                </div>
+                <a
+                  href="https://www.linkedin.com/learning/programming-foundations-data-structures-2"
+                  target="_blank"
+                  class="timeline__title link"
+                  >Data Structures
+                </a>
+
+                <div class="timeline__courseInfo flex f--align-items-c">
+                  <iconify-icon inline icon="lucide:clock-4"></iconify-icon>
+                  <span> ساعتان و 20 دقائق</span>
+                </div>
+                <div class="timeline__desc">
+                  في هذه الدورة، تقدم كاثرين هودج نظرة عامة متعمقة لأهم هياكل البيانات الأساسية
+                  للبرمجة الحديثة. بدءًا من الطرق البسيطة لتجميع البيانات مثل المصفوفات، ثم تدريجيًا
+                  هياكل بيانات أكثر تعقيدًا، وكل درس مصحوب بمثال عملي واقعي يعرض هياكل البيانات
+                  أثناء العمل.
+                </div>
+              </div>
+              <!-- timeline card end-->
+
+              <!-- timeline card number-->
+              <div class="timeline__number p-relative"><span>5</span></div>
+              <!-- timeline card START -->
+              <div class="timeline__card section-padding glassmorphism--bg p-relative">
+                <div class="timeline__label">
+                  <img
+                    src="/imgs/roadmap/linkedin-learning.svg"
+                    alt=""
+                    class="linkedin-learningIcon"
+                  />
+                </div>
+                <a
+                  href="https://www.linkedin.com/learning/programming-foundations-algorithms"
+                  target="_blank"
+                  class="timeline__title link"
+                  >Algorithms</a
+                >
+
+                <div class="timeline__courseInfo flex f--align-items-c">
+                  <iconify-icon inline icon="lucide:clock-4"></iconify-icon>
+                  <span>ساعة و 45 دقيقة</span>
+                </div>
+                <div class="timeline__desc">
+                  في هذه الدورة، يشرح Joe Marini بعض الخوارزميات الأكثر شيوعًا وفائدة البحث عن
+                  البيانات وفرزها، والعمل باستخدام تقنيات مثل recursion وفهم هياكل البيانات الشائعة.
+                  كما يناقش الآثار المترتبة على أداء الخوارزميات المختلفة وكيفية تقييم أداء خوارزمية
+                  معينة. يتم عرض كل خوارزمية عمليًا باستخدام Python ولكن يمكن تطبيق الدروس على أي
+                  لغة برمجة.
+                </div>
+              </div>
+              <!-- timeline card end-->
+
+              <a
+                href="/full-stack-roadmap.html"
+                target="_blank"
+                class="link roadmap-readmore tex-align--c"
+                >عرض كامل المنهج والمزيد من التفاصيل...</a
+              >
+            </div>
+
+            <div class="course-summary glassmorphism--bg">
+              <img src="/imgs/roadmap/front-end-lang.webp" alt="" class="course-summary__img" />
+              <div class="course-summary__content">
+                <p class="course-summary-title">المسار يتضمن الآتي:</p>
+                <ul class="course-summary__list">
+                  <li>
+                    مسار كامل مكون من 17 كورس يأخذ بيديك خطوة بخطوة حيث تم إعداده بواسطة نخبة
+                    متخصصة.
+                  </li>
+                  <li>
+                    بنهاية المسار ستصبح قادر على إنشاء تطبيقات ومواقع ويب بداية من الـFront End وحتى
+                    الـ Back End.
+                  </li>
+                  <li>
+                    مشاريع حقيقية تؤهلك للتقدم لوظيفة بعد الإنتهاء من المسار، حيث ستعمل على إنشاء
+                    Portfolio وسيرة ذاتية خاصين بك.
+                  </li>
+                  <li>
+                    المسار متاح للجميع، حتى بعد بدء المسابقة وغلق التسجيل بإمكانك الإنضمام ولكن بدون
+                    جوائز مادية.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-------- ROAD MAP SECTION END --------->
+
+        <!-------- FAQS SECTION START --------->
+        <section class="faq-section section-padding section-m-bottom">
+          <h2 class="faq-section__title secondary-heading tex-align--c">الأسئلة الشائعة</h2>
+
+          <ul class="faq grid list-s-none wrapper-padding-top">
+            <li>
+              <div class="faq__textWrapper">
+                <span class="faq__label__icon"
+                  ><iconify-icon icon="akar-icons:chat-question"></iconify-icon
+                ></span>
+                كورس اللغة الإنجليزية.
+              </div>
+              <script
+                async
+                src="https://telegram.org/js/telegram-widget.js?19"
+                data-telegram-post="kalbonyan_elmarsos_contest/2074"
+                data-width="100%"
+                data-userpic="true"
+                data-color="2D358C"
+              ></script>
+            </li>
+            <li>
+              <div class="faq__textWrapper">
+                <span class="faq__label__icon"
+                  ><iconify-icon icon="akar-icons:chat-question"></iconify-icon
+                ></span>
+                هل هناك مسار لتعلم البرمجة باللغة العربية؟
+              </div>
+              <div class="faq__video">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/wT14uC055KE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </li>
+            <li>
+              <div class="faq__textWrapper">
+                <span class="faq__label__icon"
+                  ><iconify-icon icon="akar-icons:chat-question"></iconify-icon
+                ></span>
+                هل كورسات المنهج هي الأفضل ولماذا تم إختيارها مقارنًة بغيرها؟
+              </div>
+              <script
+                async
+                src="https://telegram.org/js/telegram-widget.js?19"
+                data-telegram-post="kalbonyan_elmarsos_contest/2167"
+                data-width="100%"
+                data-userpic="true"
+                data-color="2D358C"
+              ></script>
+            </li>
+            <li>
+              <div class="faq__textWrapper">
+                <span class="faq__label__icon"
+                  ><iconify-icon icon="akar-icons:chat-question"></iconify-icon
+                ></span>
+                هل مؤسسة البنيان المرصوص مستفيدة ماديًا؟
+              </div>
+              <script
+                async
+                src="https://telegram.org/js/telegram-widget.js?19"
+                data-telegram-post="kalbonyan_elmarsos_contest/2228"
+                data-width="100%"
+                data-userpic="true"
+                data-color="2D358C"
+              ></script>
+            </li>
+            <li>
+              <div class="faq__textWrapper">
+                <span class="faq__label__icon"
+                  ><iconify-icon icon="akar-icons:chat-question"></iconify-icon
+                ></span>
+                بعد الإنتهاء من المسابقة هل سأصبح مطور Front-End أم Back-End؟
+              </div>
+              <script
+                async
+                src="https://telegram.org/js/telegram-widget.js?19"
+                data-telegram-post="kalbonyan_elmarsos_contest/2173"
+                data-width="100%"
+                data-userpic="true"
+                data-color="2D358C"
+              ></script>
+            </li>
+            <li>
+              <div class="faq__textWrapper">
+                <span class="faq__label__icon"
+                  ><iconify-icon icon="akar-icons:chat-question"></iconify-icon
+                ></span>
+                كيف يتم حساب ترتيب الفائزين؟
+              </div>
+              <script
+                async
+                src="https://telegram.org/js/telegram-widget.js?19"
+                data-telegram-post="kalbonyan_elmarsos_contest/2068"
+                data-width="100%"
+                data-userpic="true"
+                data-color="2D358C"
+              ></script>
+            </li>
+          </ul>
+          <p class="tex-align--c">
+            <a
+              href="https://t.me/kalbonyan_elmarsos_contest_2/3"
+              target="_blank"
+              class="link faq__loadmore tex-align--c glassmorphism--bg"
+              >عرض كافة الأسئلة الشائعة...</a
+            >
+          </p>
+        </section>
+        <!-------- FAQS SECTION END --------->
+
+        <!-------- FOUNDER SECTION START --------->
+        <section class="founder-section section-padding">
+          <div class="founder grid grid--2-columns wrapper-padding-top section-padding">
+            <div class="founder__info tex-align--c">
+              <img src="/imgs/founder-ahmed.webp" alt="" class="founder__info__img" />
+              <div class="founder__info__bio">
+                <p>المدير التنفيذي لمنصة المدرسة</p>
+                <p>Software Engineering Manager at QbDVision</p>
+
+                <a href="http://" target="_blank" class="link founder__info__linkedin">
+                  <iconify-icon icon="logos:linkedin"></iconify-icon>
+                </a>
+              </div>
+            </div>
+            <div class="founder__word">
+              <h2 class="fonder__word__title">
+                <iconify-icon icon="fluent-emoji:waving-hand"></iconify-icon>
+                كلمة من مؤسس كالبنيان المرصوص
+              </h2>
+              <div class="founder__word__text">
+                <p>
+                  لعل الكثير ممن يتابعني يعرفُني عن طريق كالبنيان المرصوص سواء المسابقة أو قناة سؤال
+                  وجواب أو غيرها من نشاطات تلك المؤسسة التي أسأل الله عز وجل أن ينفع بها المسلمين.
+                </p>
+                <p>
+                  ولكن اعلم بارك الله فيك أني مجرد جزء من هذا البناء بل قل جزء صغير من هذا البناء
+                  وإذا سألتني عن البنيان المرصوص لقلت لك أنه لولا الله ثم أولئك الشباب (حسن، يوسف
+                  ومنصور) ما كان للبنيان المرصوص أن يقوم له قائمة وهذا هو جُل ما بنيت عليه تلك
+                  المؤسسة وهي أن البنيان لا يقوم إلا بلبنات يَشد بعضها بعضًا وإذا ذهب بعضها ذهبت
+                  كلها.
+                </p>
+                <p>
+                  فلولا الله ثم أولئك الشباب بل قُل الرجال ما كان لهذا البناء ان يقوم ومن بعدهم يأتي
+                  (عمار، محمد، عبدالرحمن وأحمد) أولئك إخواني فجئني بمثلهم إذا جمعتنا يا جريرُ
+                  المجامعُ. جزاكم الله خيرا وبارك فيكم ونفع بنا وبكم ورزقنا وإياكم الإخلاص والقبول
+                  والعلم النافع والعمل الصالح وأن يستعملنا ولا يستبدلنا وأن يجمعنا بكم في جَنَّاتٍ
+                  وَنَهَرٍ في مقعد صدق عن مليكٍ مقتدر.
+                </p>
+              </div>
+            </div>
+            <div class="register section-padding section-m-bottom wrapper-padding-top tex-align--c">
+              <div class="register__countdown">
+                <p>(مدة المسابقة 6 أشهر) الوقت المتبقي لبداية التسجيل للدفعة الجديدة...</p>
+                <ul id="timer" class="list-s-none flex f--justify-content-c">
+                  <li><span class="months"></span>أشهر</li>
+                  <li><span class="days"></span>أيام</li>
+                  <li><span class="hours"></span>ساعات</li>
+                  <li><span class="minutes"></span>دقائق</li>
+                </ul>
+              </div>
+              <button class="register__regBtn btn">
+                <a class="link register__link">التسجيل مغلق حاليًا</a>
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-------- FOUNDER SECTION END --------->
+      </div>
+      <footer>
+        <div class="footer-section container section-padding flex f--align-items-c">
+          <div class="flex f--column">
+            <a href="https://kbelmarsos.org/" class="link">
+              <img src="/imgs/kbelmarsos-logo.webp" alt="" class="site-logo"
+            /></a>
+            <p class="footer-section__copyright">
+              جميع الحقوق محفوظة&copy; -
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+            </p>
+          </div>
+          <div class="footer-section__socials flex f--align-items-c">
+            <a
+              href="https://www.linkedin.com/company/%D9%83%D8%A7%D9%84%D8%A8%D9%86%D9%8A%D8%A7%D9%86-%D8%A7%D9%84%D9%85%D8%B1%D8%B5%D9%88%D8%B5/"
+              target="_blank"
+              class="link"
+              ><iconify-icon inline icon="line-md:linkedin"></iconify-icon>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCG-wLtNfSTg742SiH7Lne1Q"
+              target="_blank"
+              class="link"
+            >
+              <iconify-icon inline icon="icon-park-outline:youtube"></iconify-icon>
+            </a>
+            <a href="https://t.me/kalbonyan_elmarsos_contest_2" target="_blank" class="link"
+              ><iconify-icon inline icon="line-md:telegram"></iconify-icon>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
