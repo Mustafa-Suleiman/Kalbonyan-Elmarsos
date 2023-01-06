@@ -1,7 +1,7 @@
 <div align="center">
       <h1> <img src="https://user-images.githubusercontent.com/109823798/211039907-4e2c0b72-99b1-447e-ae01-8bcdded6d30d.png" width="80px"><br/>Kalbonyan Elmarsos</h1>
      </div>
-<p align="center"> <a href="https://kbelmarsos.org/" target="_blank"><img alt="" src="https://img.shields.io/badge/Website-EA4C89?style=normal&logo=dribbble&logoColor=white" style="vertical-align:center" /></a> <a href="}" target="_blank"><img alt="" src="https://img.shields.io/badge/LinkedIn-0077B5?style=normal&logo=linkedin&logoColor=white" style="vertical-align:center" /></a> </p>
+<p align="center"> <a href="https://kbelmarsos.org/" target="_blank"><img alt="" src="https://img.shields.io/badge/Live-Website-EA4C89?style=normal&logo=dribbble&logoColor=white" style="vertical-align:center" /></a> </p>
 
 # Description
 Responsive multiple-page website for Kalbonyan Elmarsos from scratch and deployed it in one week; after publishing it on Google, it achieved more than 5000 visits.
